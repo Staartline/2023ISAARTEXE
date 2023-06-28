@@ -16,6 +16,7 @@
 		<div>
 			<h1>ISAARTEXE 2023</h1>
 			<p>Portfolio of Works</p>
+			<p>Click or tap on an image to expand. Tap again to revert it.</p>
 		</div>
 	</div>
 	<div class="gallery">
@@ -82,8 +83,20 @@
 		
 	</div>
 	<div class="footer">
-		Maintained by <a href="" target="_blank">ISAARTEXE 2023</a>
+		<p>Maintained by <a href="https://twitter.com/ISAARTEXE" target="_blank">ISAARTEXE 2023</a></p>
 	</div>
 
+	<script>
+
+		for(var i = 0; i < document.querySelectorAll("img").length; i++){
+			document.querySelectorAll("img")[i].addEventListener("click", function (){
+
+				console.log("daclick");
+				this.classList.toggle("expanded");
+				console.log("clicked");
+			});
+		}
+
+	</script>
 </body>
 </html>

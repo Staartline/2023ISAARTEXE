@@ -1,11 +1,15 @@
 :root{
-	--PortfolioDark:black;
+	--PortfolioDark:#453C67;
+	--PortfolioBlue:#6D67E4;
 	--PortfolioLight:white;
-	--PortfolioPurple:purple;
+	--PortfolioTeal:#46C2CB;
+	--PortfolioGreen:#F2F7A1;
+	--PortfolioPurple:#E5A5FF;
 }
 body{
 	text-align: center;
 	margin: 0;
+	color:var(--PortfolioDark);
 	font-family: 'DM Sans', sans-serif;
 }
 
@@ -42,13 +46,22 @@ h1{
 
 .item{
 	min-width: 100%;
-	border: 1px solid black;
-
+	border: 1px solid var(--PortfolioDark);
+	border-radius: 20px;
 }
 
 img{
 	padding-top: 10px;
 	width: 90%;
+	border-radius: 20px;
+}
+
+a{
+	color: var(--PortfolioTeal);
+}
+a:hover{
+	color: var(--PortfolioPurple);
+
 }
 
 .footer{
@@ -66,4 +79,20 @@ img{
 	.gallery{
 		grid-template-columns: 1fr;
 	}
+}
+
+.expanded{
+	position:fixed;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right: 0;
+
+	/*Proportional resizing directions here: https://www.w3docs.com/snippets/css/how-to-resize-images-proportionally-scaled-using-css-for-responsive-web-design.html*/
+	width:auto;
+	height:90%;
+
+
+
 }
