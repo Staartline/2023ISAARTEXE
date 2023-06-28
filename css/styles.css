@@ -6,22 +6,27 @@
 	--PortfolioGreen:#F2F7A1;
 	--PortfolioPurple:#E5A5FF;
 }
+
+
 body{
-	text-align: center;
-	margin: 0;
 	color:var(--PortfolioDark);
 	font-family: 'DM Sans', sans-serif;
+
+	text-align: center;
+	margin: 0;
+	
+	
 }
 
 h1{
 	font-family: 'Lexend Peta', sans-serif;
-
-	font-size: 5rem;
+	font-size: 4rem;
 }
+
 .intro{
 	background-image: url(https://images.unsplash.com/photo-1496024840928-4c417adf211d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
 	background-size: cover;
-	height: 200px;
+
 
 	display: flex;
 	justify-content: center;
@@ -56,12 +61,38 @@ img{
 	border-radius: 20px;
 }
 
+.expanded{
+	position:fixed;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right: 0;
+
+	width:auto;
+	height:90%;
+	z-index: 2;
+}
+
 a{
 	color: var(--PortfolioTeal);
 }
 a:hover{
 	color: var(--PortfolioPurple);
 
+}
+
+.coolbgthing{
+	height: 150vh;
+	width: 100vw;
+	background-color: #46c2cb80;
+	display: none;
+	position: fixed;
+	top: 0;
+}
+
+.visible{
+	display:block;
 }
 
 .footer{
@@ -75,24 +106,15 @@ a:hover{
 
 }
 
+
+
 @media(max-width:600px){
 	.gallery{
 		grid-template-columns: 1fr;
 	}
+
+	.expanded{
+
+	}
 }
 
-.expanded{
-	position:fixed;
-	top: 0;
-	margin-left: auto;
-	margin-right: auto;
-	left:0;
-	right: 0;
-
-	/*Proportional resizing directions here: https://www.w3docs.com/snippets/css/how-to-resize-images-proportionally-scaled-using-css-for-responsive-web-design.html*/
-	width:auto;
-	height:90%;
-
-
-
-}

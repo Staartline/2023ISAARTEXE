@@ -16,9 +16,11 @@
 		<div>
 			<h1>ISAARTEXE 2023</h1>
 			<p>Portfolio of Works</p>
-			<p>Click or tap on an image to expand. Tap again to revert it.</p>
+			
 		</div>
 	</div>
+
+	<div class="coolbgthing"></div>
 	<div class="gallery">
 
 		<div class="col">
@@ -93,9 +95,24 @@
 
 				console.log("daclick");
 				this.classList.toggle("expanded");
+				document.querySelector(".coolbgthing").classList.toggle("visible");
 				console.log("clicked");
 			});
+
+
 		}
+
+		document.querySelector(".coolbgthing").addEventListener("click",function() {
+			console.log("daclick");
+
+			var expandedImg = document.getElementsByClassName("expanded");
+			while(expandedImg.length){
+				expandedImg[0].classList.remove("expanded");
+			}
+			document.querySelector(".coolbgthing").classList.remove("visible");
+			console.log("clicked");
+		});
+
 
 	</script>
 </body>
