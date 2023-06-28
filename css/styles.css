@@ -1,6 +1,7 @@
 :root{
 	--PortfolioDark:black;
 	--PortfolioLight:;
+	--PortfolioPurple:purple;
 }
 body{
 	text-align: center;
@@ -12,14 +13,20 @@ h1{
 	font-family: 'Lexend Peta', sans-serif;
 }
 .intro{
-	background-image: url();
+	background-image: url(https://images.unsplash.com/photo-1496024840928-4c417adf211d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+	background-size: cover;
+	height: 200px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 
 }
 
 .gallery{
+	padding:10px;
 
-	padding-left: 10px;
-	padding-right:10px;
 	display:grid;
 	gap:10px;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -28,15 +35,18 @@ h1{
 .col{
 	display:flex;
 	flex-direction: column;
+	gap: 10px;
 }
 
 .item{
 	min-width: 100%;
+	border: 1px solid black;
 
 }
 
 img{
-	width: 100%;
+	padding-top: 10px;
+	width: 90%;
 }
 
 .footer{
