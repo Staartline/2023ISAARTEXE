@@ -11,6 +11,7 @@
 body{
 	color:var(--PortfolioDark);
 	font-family: 'DM Sans', sans-serif;
+	font-size: 1.25rem;
 
 	text-align: center;
 	margin: 0;
@@ -109,6 +110,9 @@ a:hover{
 
 
 @media(max-width:600px){
+	h1{
+		font-size: 2rem;
+	}
 	.gallery{
 		grid-template-columns: 1fr;
 	}
@@ -116,7 +120,7 @@ a:hover{
 	.expanded{
 
 		position:fixed;
-		top: 0;
+		top: 0px;
 		margin-left: auto;
 		margin-right: auto;
 		left:0;
